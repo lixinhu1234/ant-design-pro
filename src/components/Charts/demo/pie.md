@@ -8,36 +8,21 @@ import { Pie, yuan } from 'ant-design-pro/lib/Charts';
 
 const salesPieData = [
   {
-    x: '家用电器',
+    x: '业务域',
     y: 4544,
   },
   {
-    x: '食用酒水',
+    x: '数据层',
     y: 3321,
   },
-  {
-    x: '个护健康',
-    y: 3113,
-  },
-  {
-    x: '服饰箱包',
-    y: 2341,
-  },
-  {
-    x: '母婴产品',
-    y: 1231,
-  },
-  {
-    x: '其他',
-    y: 1231,
-  },
+    
 ];
 
 ReactDOM.render(
   <Pie
     hasLegend
-    title="销售额"
-    subTitle="销售额"
+    title="合计"
+    subTitle="合计"
     total={() => (
       <span
         dangerouslySetInnerHTML={{
